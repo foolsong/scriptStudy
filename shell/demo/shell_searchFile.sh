@@ -1,6 +1,7 @@
 #! /bin/sh  
-cd ~ 
-cd /Users/songyongjian/Desktop
+cd ~
+userName=$(whoami)
+cd /Users/$userName/Desktop
 arr=$(ls)
 temp='iOS'
 # echo $arr
