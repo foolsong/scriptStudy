@@ -1,0 +1,13 @@
+saaadasdasdas
+dsfsdfs
+322423423423423
+- (PagePlaceholderView *{
+    if (!_requestFailedView) {
+        CGRect failedViewFrame = CGRectMake(0, 0, STDScreenW, STDScreenH - NAVBAR_HEIGHT - 45);
+        _requestFailedView = [PagePlaceholderView requestFailedViewWithFrame:failedViewFrame
+                                                                      object:self
+                                                                      action:@selector(p_loadCourseList)];
+    }
+    return _requestFailedView;
+}
+
