@@ -8,7 +8,7 @@ def getHtml(url):
     return html
 
 def getImg(url):
-    reg =  '" src="(.+?imgsrc.+?\.jpg)"'
+    reg =  '" src="(.+?imgsa.+?\.jpg)"'
     imgre = re.compile(reg)
     imgList = re.findall(imgre,html)
     x = 0
@@ -17,6 +17,6 @@ def getImg(url):
         x += 1
     return imgList
 
-html = getHtml("http://tieba.baidu.com/p/5023694417")
+html = getHtml("https://tieba.baidu.com/p/5144375459")
 
 print getImg(html)
